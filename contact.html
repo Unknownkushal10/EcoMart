@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | BloomEco</title>
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo" style="text-decoration: none; letter-spacing:1px">
+                <span class="logo-icon">🌱</span>BloomEco
+            </a>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="research.html">Research</a>
+                </li>
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+                <li>
+                    <a href="contact.html" style="border-bottom: 2px solid #a8d08d">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <p>We would love to welcome capable, qualified and hard working person to work with us as a team.<br>Feel free to contact us if you are interested to work with us.</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h2>Send your request</h2>
+                    <form>
+                        <div class="input-row">
+                            <div class="left">
+                                <div class="input-group">
+                                    <label>Name</label>
+                                    <input type="text" placeholder="Write Your name" required>
+                                </div>
+                                <div class="input-group">
+                                    <label>Contact No.</label>
+                                    <input type="number" placeholder="Write Your Contact Number">
+                                </div>
+                                <div class="input-group">
+                                    <label>Email</label>
+                                    <input type="email" placeholder="Write Your Email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="Write Subject" required>
+                        </div>
+                        <label>Message</label>
+                        <textarea rows="4" placeholder="Write Your Message"></textarea>
+                        <button type="submit" id="send_btn" class="submitbtn">Send</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h2>Reach Us</h2>
+                    <div class="reach">
+                        <h3><i class="fa-solid fa-map-location"></i> Address</h3>
+                        <span>Itahari, Sunsari</span>
+                    </div>
+                    <div class="reach">
+                        <h3><i class="fa-solid fa-phone"></i> Phone</h3>
+                        <span>+9771234567890</span>
+                    </div>
+                    <div class="reach">
+                        <h3><i class="fas fa-envelope"></i> Email</h3>
+                        <span>ecomart@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <script>
+                const send_btn = document.getElementById('send_btn');
+                if (send_btn) {
+                    send_btn.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        alert("Your contact form has been sent!");
+                    });
+                }
+            </script>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="blog.html">Blog</a>
+                <a href="research.html">Research</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9">
+                &copy; 2026 BloomEco. All rights reserved. Committed to a sustainable
+                future.
+            </p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem; color: #a8d08d">
+                  Every purchase plants a tree 
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
