@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BloomEco - Your destination for sustainable lifestyle products including bamboo bottles, organic tote bags, and reusable kitchen items"
+    />
+    <meta
+      name="keywords"
+      content="sustainable, eco-friendly, bamboo bottles, organic bags, reusable products"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/script.js"></script>
+    <title>BloomEco - Sustainable Living Made Simple</title>
+
+    <style>
+      /* ============== INTERNAL CSS - Additional Styling ============== */
+
+      /* Cart notification styling */
+      .cart-notification {
+        position: fixed;
+        top: 100px;
+        right: 20px;
+        background: #2d5016;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        z-index: 2000;
+        display: none;
+        animation: slideIn 0.5s ease-out;
+      }
+
+      /* Discount badge styling */
+      .discount-badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #ff6b6b;
+        color: white;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
+
+      /* Product card hover effect */
+      .product-card {
+        position: relative;
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(400px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-container">
+        <a
+          href="#"
+          class="logo"
+          style="text-decoration: none; letter-spacing: 1px"
+        >
+          <span class="logo-icon">🌱</span>
+          BloomEco
+        </a>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html" style="border-bottom: 2px solid #a8d08d"
+              >Home</a
+            >
+          </li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1 style="font-weight: 900; letter-spacing: 2px">
+          Welcome to BloomEco
+        </h1>
+        <p style="font-weight: 300; max-width: 700px; margin: 0 auto 2rem">
+          Your trusted destination for sustainable living products. Discover
+          eco-friendly alternatives that make a real difference for our planet.
+          From bamboo bottles to organic tote bags, we bring you quality
+          products that align with your values.
+        </p>
+        <a
+          href="products.html"
+          class="cta-button"
+          style="text-transform: uppercase; letter-spacing: 1px"
+          >Shop Sustainable</a
+        >
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="features-container">
+        <h2 class="section-title">Why Choose BloomEco?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">♻️</div>
+            <h3>100% Sustainable</h3>
+            <p>
+              All our products are made from eco-friendly materials that don't
+              harm the environment.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌍</div>
+            <h3>Planet Positive</h3>
+            <p>
+              Every purchase contributes to environmental conservation and
+              carbon offset programs.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">✨</div>
+            <h3>Premium Quality</h3>
+            <p>
+              Sustainable doesn't mean compromise. Our products are durable,
+              stylish, and functional.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💚</div>
+            <h3>Ethical Sourcing</h3>
+            <p>
+              We partner with suppliers who share our commitment to fair trade
+              and ethical practices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Preview Section -->
+    <section class="products-preview">
+      <div class="products-container">
+        <h2
+          class="section-title"
+          style="color: #2d5016; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1)"
+        >
+          Featured Products
+        </h2>
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div
+            class="product-card"
+            style="border: 2px solid transparent; transition: border 0.3s"
+          >
+            <span class="discount-badge">20% OFF</span>
+            <img
+              src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400"
+              alt="Bamboo Water Bottle"
+              class="product-image"
+            />
+            <div class="product-info">
+              <h3>Bamboo Water Bottle</h3>
+              <p style="color: #666; font-size: 0.9rem">
+                Eco-friendly, BPA-free bamboo bottle with thermal insulation
+              </p>
+              <div class="product-price">
+                $24.99
+                <span
+                  style="
+                    text-decoration: line-through;
+                    color: #999;
+                    font-size: 1rem;
+                  "
+                  >$31.24</span
+                >
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Bamboo Water Bottle', 24.99)"
+              >
+                Add to Cart 🛒
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <span class="discount-badge">15% OFF</span>
+            <img
+              src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400"
+              alt="Organic Tote Bag"
+              class="product-image"
+            />
+            <div class="product-info">
+              <h3>Organic Tote Bag</h3>
+              <p style="color: #666; font-size: 0.9rem">
+                100% organic cotton tote bag, perfect for shopping and daily use
+              </p>
+              <div class="product-price">
+                $15.99
+                <span
+                  style="
+                    text-decoration: line-through;
+                    color: #999;
+                    font-size: 1rem;
+                  "
+                  >$18.81</span
+                >
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Organic Tote Bag', 15.99)"
+              >
+                Add to Cart 🛒
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <span class="discount-badge">25% OFF</span>
+            <img
+              src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=400"
+              alt="Reusable Kitchen Set"
+              class="product-image"
+            />
+            <div class="product-info">
+              <h3>Reusable Kitchen Set</h3>
+              <p style="color: #666; font-size: 0.9rem">
+                Complete set of bamboo utensils and beeswax wraps
+              </p>
+              <div class="product-price">
+                $32.99
+                <span
+                  style="
+                    text-decoration: line-through;
+                    color: #999;
+                    font-size: 1rem;
+                  "
+                  >$43.99</span
+                >
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Reusable Kitchen Set', 32.99)"
+              >
+                Add to Cart 🛒
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <span class="discount-badge" style="background: #4caf50">NEW</span>
+            <img
+              src="https://images.unsplash.com/photo-1617985729285-ad9e5c75fc5b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Bamboo Toothbrush Set"
+              class="product-image"
+            />
+            <div class="product-info">
+              <h3>Bamboo Toothbrush Set</h3>
+              <p style="color: #666; font-size: 0.9rem">
+                Pack of 4 biodegradable bamboo toothbrushes with soft bristles
+              </p>
+              <div class="product-price">$12.99</div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Bamboo Toothbrush Set', 12.99)"
+              >
+                Add to Cart 🛒
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card">
+            <span class="discount-badge">30% OFF</span>
+            <img
+              src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400"
+              alt="Reusable Food Wraps"
+              class="product-image"
+            />
+            <div class="product-info">
+              <h3>Reusable Food Wraps</h3>
+              <p style="color: #666; font-size: 0.9rem">
+                Beeswax wraps set - perfect alternative to plastic wrap
+              </p>
+              <div class="product-price">
+                $18.99
+                <span
+                  style="
+                    text-decoration: line-through;
+                    color: #999;
+                    font-size: 1rem;
+                  "
+                  >$27.13</span
+                >
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Reusable Food Wraps', 18.99)"
+              >
+                Add to Cart 🛒
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card">
+            <span class="discount-badge">10% OFF</span>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1664007549543-1e1dfe82658d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Stainless Steel Straws"
+              class="product-image"
+            />
+            <div class="product-info">
+              <h3>Stainless Steel Straws</h3>
+              <p style="color: #666; font-size: 0.9rem">
+                Reusable metal straws set with cleaning brush and carrying case
+              </p>
+              <div class="product-price">
+                $9.99
+                <span
+                  style="
+                    text-decoration: line-through;
+                    color: #999;
+                    font-size: 1rem;
+                  "
+                  >$11.10</span
+                >
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Stainless Steel Straws', 9.99)"
+              >
+                Add to Cart 🛒
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div class="product-card">
+            <span class="discount-badge" style="background: #ff9800">HOT</span>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1684471006752-51c016b7b51c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Eco-Friendly Soap Bars"
+              class="product-image"
+            />
+            <div class="product-info">
+              <h3>Eco-Friendly Soap Bars</h3>
+              <p style="color: #666; font-size: 0.9rem">
+                Organic handmade soap bars - variety pack of 6 scents
+              </p>
+              <div class="product-price">$21.99</div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Eco-Friendly Soap Bars', 21.99)"
+              >
+                Add to Cart 🛒
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div class="product-card">
+            <span class="discount-badge">35% OFF</span>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1716278500973-efa071ddd3c1?q=80&w=1128&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Bamboo Cutlery Set"
+              class="product-image"
+            />
+            <div class="product-info">
+              <h3>Bamboo Cutlery Set</h3>
+              <p style="color: #666; font-size: 0.9rem">
+                Portable bamboo utensils with travel case - perfect for
+                on-the-go
+              </p>
+              <div class="product-price">
+                $16.99
+                <span
+                  style="
+                    text-decoration: line-through;
+                    color: #999;
+                    font-size: 1rem;
+                  "
+                  >$26.14</span
+                >
+              </div>
+              <button
+                class="add-to-cart-btn"
+                onclick="addToCart('Bamboo Cutlery Set', 16.99)"
+              >
+                Add to Cart 🛒
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Notification (Hidden by default) -->
+    <div id="cartNotification" class="cart-notification" style="display: none">
+      <span id="cartMessage"></span>
+    </div>
+
+    <!-- Blog Preview Section -->
+    <section class="blog-preview">
+      <div class="blog-container">
+        <h2>Explore Eco-Friendly Living</h2>
+        <p>
+          Visit our blog to learn how technology and sustainable practices are
+          transforming daily life and business. Discover tips, research
+          insights, and inspiring stories about living more sustainably.
+        </p>
+        <a href="blog.html" class="cta-button">Read Our Blog</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="blog.html">Blog</a>
+          <a href="research.html">Research</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9">
+          &copy; 2026 BloomEco. All rights reserved. Committed to a sustainable
+          future.
+        </p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem; color: #a8d08d">
+           Every purchase plants a tree 
+        </p>
+      </div>
+    </footer>
+
+    <!-- INTERNAL JAVASCRIPT (JavaScript within script tags in HTML document) -->
+    <script>
+      let cart = [];
+      let cartTotal = 0;
+
+      function addToCart(productName, price) {
+        cart.push({ name: productName, price: price });
+        cartTotal += price;
+
+        showCartNotification(productName, price);
+
+        console.log("Cart Items:", cart.length);
+        console.log("Cart Total:", cartTotal.toFixed(2));
+      }
+
+      function showCartNotification(productName, price) {
+        const notification = document.getElementById("cartNotification");
+        const message = document.getElementById("cartMessage");
+
+        message.innerHTML =
+          "✅ Added to cart!<br><strong>" +
+          productName +
+          "</strong> - Rs. " +
+          price.toFixed(2);
+
+        notification.style.display = "block";
+
+        setTimeout(() => {
+          notification.style.display = "none";
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>
