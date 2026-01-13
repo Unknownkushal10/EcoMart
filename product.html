@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BloomEco - Products</title>
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+        <nav>
+            <div class="nav-container">
+                <a href="#" class="logo" style="text-decoration: none; letter-spacing: 1px">
+                    <span class="logo-icon">🌱</span>
+                    BloomEco
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" style="border-bottom: 2px solid #a8d08d">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <script src="./js/product.js"></script>
+
+        <!---Products-->
+    <div class="small-container">
+        <h2>Featured Products</h2>
+        <div class="Products">
+            <div class="col-1" onclick="openModal('Bamboo Bottle', '$20.00', './images/bottle1.jpeg', 'Eco-friendly bamboo bottle perfect for daily hydration. Made from sustainable materials.')">
+                                <img src="./images/bottle1.jpeg" alt="Bamboo Bottle">
+                <h4>Bamboo Bottle</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$20.00</p>
+            </div>
+            
+            <div class="col-1" onclick="openModal('Kitchen Set', '$50.00', './images/kitchenset1.avif', 'Complete eco-friendly kitchen set with bamboo utensils and containers.')">
+                <img src="./images/kitchenset1.avif" alt="Kitchen Set">
+                <h4>Kitchen Set</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$50.00</p>
+            </div>
+            
+            <div class="col-1" onclick="openModal('Tote Bag', '$25.00', './images/totebag2.webp', 'Stylish and durable canvas tote bag for everyday shopping and errands.')">
+                <img src="./images/totebag2.webp" alt="Tote Bag">
+                <h4>Tote Bag</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>$25.00</p>
+            </div>
+            
+            <div class="col-1" onclick="openModal('Beeswax Food Wrap', '$15.00', './images/wrap1.webp', 'Reusable beeswax wraps to replace plastic wrap. Keep food fresh naturally.')">
+                <img src="./images/wrap1.webp" alt="Beeswax Food Wrap">
+                <h4>Beeswax Food Wrap</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$15.00</p>
+            </div>
+            
+            <!-- NEW PRODUCTS -->
+            <div class="col-1" onclick="openModal('Bamboo Toothbrush Set', '$12.00', './images/Bamboo Toothbrush Set.avif', 'Pack of 4 biodegradable bamboo toothbrushes with soft bristles.')">
+                <img src="./images/Bamboo Toothbrush Set.avif" alt="Bamboo Toothbrush Set">
+                <h4>Bamboo Toothbrush Set</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$12.00</p>
+            </div>
+            
+            <div class="col-1" onclick="openModal('Reusable Straws', '$18.00', './images/Stainless Steel Straws.avif', 'Set of 6 stainless steel straws with cleaning brush. Say no to plastic!')">
+                <img src="./images/Stainless Steel Straws.avif" alt="Reusable Straws">
+                <h4>Reusable Straws</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$18.00</p>
+            </div>
+            
+            <div class="col-1" onclick="openModal('Organic Cotton Napkins', '$30.00', './images/napkin.webp', 'Set of 12 soft organic cotton napkins. Machine washable and long-lasting.')">
+                <img src="./images/napkin.webp" alt="Organic Cotton Napkins">
+                <h4>Organic Cotton Napkins</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$30.00</p>
+            </div>
+            
+            <div class="col-1" onclick="openModal('Glass Food Containers', '$45.00', './images/container.jpg', 'Set of 5 glass food storage containers with bamboo lids. Microwave safe.')">
+                <img src="./images/container.jpg" alt="Glass Food Containers">
+                <h4>Glass Food Containers</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$45.00</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="Product">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modalTitle"></h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <div class="price" id="modalPrice"></div>
+                    <div class="description" id="modalDescription"></div>
+                    <div class="quantity-selector">
+                        <button onclick="decreaseQuantity()">-</button>
+                        <span id="quantity">1</span>
+                        <button onclick="increaseQuantity()">+</button>
+                    </div>
+                    <button class="add-to-cart-btn" onclick="addToCart()">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="research.html">Research</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9">&copy; 2026 BloomEco. All rights reserved. Committed to a sustainable future.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem; color: #a8d08d">Every purchase plants a tree</p>
+            </div>
+        </footer>
+    
+</body>
+</html>

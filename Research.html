@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BloomEco - Your destination for sustainable lifestyle products including bamboo bottles, organic tote bags, and reusable kitchen items" />
+    <meta name="keywords" content="sustainable, eco-friendly, bamboo bottles, organic bags, reusable products" />
+    <link rel="stylesheet" href="./css/research.css" />
+    <title>BloomEco - Sustainable Living Made Simple</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-container">
+        <a
+          href="#"
+          class="logo"
+          style="text-decoration: none; letter-spacing: 1px"
+        >
+          <span class="logo-icon">🌱</span>
+          BloomEco
+        </a>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="research.html"  style="border-bottom: 2px solid #a8d08d"
+              >Research</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>E-Commerce Website Research & Analysis</h1>
+                <p>Comparing industry-leading platforms with our BloomEco implementation</p>
+            </div>
+        </section>
+
+        <section class="research-section">
+            <div class="container">
+                <div class="research-intro">
+                    <h2>Research Methodology</h2>
+                    <p>This research section analyzes web components from five leading e-commerce and sustainable product websites, comparing their implementations with our BloomEco website. The analysis focuses on navigation, product display, form components, layout, interactive elements, and accessibility features. Each comparison provides insights into industry best practices and justifies our design decisions for a beginner-friendly sustainable e-commerce platform.</p>
+                </div>
+
+                <h2>Component Comparison Analysis</h2>
+                
+                <table class="research-table">
+                    <thead>
+                        <tr>
+                            <th>Website Name</th>
+                            <th>Component Analyzed</th>
+                            <th>Their Implementation</th>
+                            <th>BloomEco Implementation</th>
+                            <th>Comparison Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://www.amazon.com" target="_blank" class="website-link">Amazon.com</a></td>
+                            <td>Navigation Bar</td>
+                            <td>Sticky header with mega dropdown menus, search bar prominently placed, dark theme with white text, account and cart icons</td>
+                            <td>Simple horizontal navigation bar, light theme with green accents, no dropdown menus (keeping it beginner-friendly)</td>
+                            <td>Amazon uses complex navigation for thousands of product categories. Our simpler approach works better for a focused sustainable products store. Both keep navigation visible at all times, but Amazon's complexity would be overwhelming for our target audience.</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><a href="https://www.amazon.com" target="_blank" class="website-link">Amazon.com</a></td>
+                            <td>Product Cards</td>
+                            <td>Grid layout with product image, star ratings, price (with strikethrough for discounts), Prime badge, customer review count, and "Add to Cart" button</td>
+                            <td>Grid layout with product image, clear pricing (original crossed out, discounted price emphasized), savings percentage, simple "Add to Cart" button</td>
+                            <td>Both use grid layout for easy product scanning. Amazon includes social proof (ratings/reviews) which we omitted for simplicity and to reduce backend complexity. Both prominently display discounts to encourage purchases, following proven e-commerce conversion principles.</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="https://www.etsy.com" target="_blank" class="website-link">Etsy.com</a></td>
+                            <td>Product Images</td>
+                            <td>Multiple product images with thumbnail navigation, zoom on hover, 360-degree view option for some items, video demonstrations</td>
+                            <td>Single product image per item for simplicity, alt text for accessibility, appropriately sized for fast loading</td>
+                            <td>Etsy's advanced image gallery suits their artisan products requiring detailed inspection. Our single-image approach maintains page load speed and simplicity while providing essential visual information. This decision prioritizes performance over advanced features, appropriate for our educational project scope.</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="https://www.patagonia.com" target="_blank" class="website-link">Patagonia.com</a></td>
+                            <td>Sustainability Messaging</td>
+                            <td>Dedicated "Environmental Activism" section in navigation, detailed product impact labels, repair/reuse programs prominently featured, carbon footprint calculators</td>
+                            <td>Blog section discussing technology's environmental impact, product descriptions emphasizing eco-benefits, sustainability theme throughout design</td>
+                            <td>Both prioritize environmental messaging but at different scales. Patagonia integrates sustainability into their brand identity at every level with extensive resources. We focus on educational content (blog) and clear eco-benefits in product descriptions, making sustainability accessible without overwhelming complexity.</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="https://packagefreeshop.com" target="_blank" class="website-link">PackageFreeShop.com</a></td>
+                            <td>Color Scheme</td>
+                            <td>Earth tones (browns, greens, beige), natural aesthetic, lots of white space, minimalist design, organic shapes</td>
+                            <td>Green and brown color palette reflecting nature and sustainability, clean white backgrounds for readability, consistent throughout all pages</td>
+                            <td>Both use nature-inspired colors to reinforce eco-friendly brand identity. Their minimalist approach influenced our clean, uncluttered design. Color psychology supports the sustainable lifestyle message, with green representing growth and brown symbolizing earth and natural materials.</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="https://earthhero.com" target="_blank" class="website-link">EarthHero.com</a></td>
+                            <td>Contact Form</td>
+                            <td>Multi-step form with dropdown for inquiry type, required field indicators (*), inline validation, friendly confirmation message, live chat integration</td>
+                            <td>Single-page contact form with text inputs (name, email, phone), textarea for message, dropdown for inquiry type, JavaScript validation, popup alert on successful submission</td>
+                            <td>Both implement form validation to ensure data quality. EarthHero's multi-step approach reduces form abandonment but increases complexity. Our simpler single-page form is more straightforward for a smaller site and easier to implement at beginner level while still providing essential functionality.</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="https://www.amazon.com" target="_blank" class="website-link">Amazon.com</a></td>
+                            <td>Footer Design</td>
+                            <td>Multi-column footer with extensive links (help, policies, company info), social media icons, country/language selector, payment method icons</td>
+                            <td>Simple footer with copyright information, essential links (About, Contact, Privacy Policy), basic styling consistent with site theme</td>
+                            <td>Amazon's footer serves as a comprehensive sitemap for their vast platform. Our minimal footer provides necessary information without overwhelming users, appropriate for a smaller e-commerce site. Both approaches are context-appropriate for their respective scales and user needs.</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="https://www.etsy.com" target="_blank" class="website-link">Etsy.com</a></td>
+                            <td>Typography</td>
+                            <td>Mix of sans-serif fonts (Graphik for body text, custom fonts for headings), clear hierarchy, generous line spacing for readability</td>
+                            <td>Web-safe sans-serif fonts (Arial or Helvetica), consistent heading hierarchy (h1, h2, h3), adequate line-height for easy reading</td>
+                            <td>Both prioritize readability with sans-serif fonts. Etsy uses custom fonts for brand identity but requires additional loading time. Our web-safe fonts ensure universal compatibility and fast loading without external font files, keeping code simple and accessible across all devices and browsers.</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="https://www.patagonia.com" target="_blank" class="website-link">Patagonia.com</a></td>
+                            <td>Interactive Components</td>
+                            <td>Image sliders/carousels for product galleries, modal popups for promotions, filter/sort functionality, live chat widgets, newsletter signup forms</td>
+                            <td>Simple hover effects on product cards, basic navigation, newsletter signup in footer, contact form with validation</td>
+                            <td>Patagonia's advanced interactivity suits their established brand and technical resources. Our simplified approach focuses on core functionality while maintaining user engagement through subtle hover effects and clear calls-to-action. This decision aligns with our educational project scope and ensures cross-browser compatibility.</td>
+                        </tr>
+
+                        <tr>
+                            <td><a href="https://earthhero.com" target="_blank" class="website-link">EarthHero.com</a></td>
+                            <td>Accessibility Components</td>
+                            <td>Comprehensive alt text for images, keyboard navigation support, high color contrast ratios, font size adjustment tools, screen reader compatibility</td>
+                            <td>Alt text for images, semantic HTML structure, clear color contrast, keyboard navigation support, responsive design</td>
+                            <td>Both prioritize accessibility but at different levels of implementation. EarthHero's advanced accessibility features serve users with diverse needs. Our implementation covers fundamental accessibility principles (semantic HTML, alt text, color contrast) ensuring basic compliance while keeping development manageable for a student project.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="research-section">
+                    <h2>Key Insights and Learning Outcomes</h2>
+                    
+                    <h3>Design Principles Observed</h3>
+                    <ul>
+                        <li><strong>Consistency Across Pages:</strong> All successful websites maintain consistent navigation, color schemes, and typography throughout their platforms, reinforcing brand identity and improving user experience.</li>
+                        <li><strong>Clear Visual Hierarchy:</strong> Industry leaders use size, color, and spacing to guide user attention to important elements like calls-to-action and product information.</li>
+                        <li><strong>Mobile-First Approach:</strong> Responsive design is standard practice, with most traffic coming from mobile devices requiring optimized layouts and touch-friendly interfaces.</li>
+                        <li><strong>Performance Optimization:</strong> Fast loading times are crucial, with successful sites optimizing images, minimizing code, and using efficient loading strategies.</li>
+                    </ul>
+
+                    <h3>BloomEco Design Justifications</h3>
+                    <ul>
+                        <li><strong>Simplified Navigation:</strong> Our streamlined navigation reduces cognitive load compared to Amazon's complex mega-menus, making it appropriate for our focused product range and beginner-friendly implementation.</li>
+                        <li><strong>Essential Product Information:</strong> We prioritize key decision-making factors (price, eco-benefits, basic features) over social proof elements like reviews, reducing backend complexity while maintaining conversion potential.</li>
+                        <li><strong>Educational Focus:</strong> Unlike commercial sites focused purely on sales, our blog and research sections add educational value, aligning with our sustainability mission and academic project requirements.</li>
+                        <li><strong>Accessibility Foundation:</strong> While not implementing advanced features like EarthHero's font adjustment tools, we ensure basic accessibility through semantic HTML, alt text, and color contrast compliance.</li>
+                    </ul>
+
+                    <h3>Technical Implementation Learnings</h3>
+                    <ul>
+                        <li><strong>Grid Layouts:</strong> All analyzed sites use CSS Grid or Flexbox for product displays, confirming our choice of grid layout for product cards as industry standard.</li>
+                        <li><strong>Form Validation:</strong> Client-side validation is universally implemented, supporting our decision to include JavaScript validation for contact form.</li>
+                        <li><strong>Color Psychology:</strong> Successful eco-commerce sites consistently use green and earth tones, validating our color scheme choices for brand alignment.</li>
+                        <li><strong>Performance Considerations:</strong> The balance between feature richness and page speed observed in professional sites informed our decision to prioritize essential functionality over advanced features.</li>
+                    </ul>
+                </div>
+
+                <div class="research-section">
+                    <h2>References and Sources</h2>
+                    <ul>
+                        <li>Amazon.com - World's largest e-commerce platform</li>
+                        <li>Etsy.com - Handmade and vintage marketplace</li>
+                        <li>Patagonia.com - Outdoor clothing with strong sustainability focus</li>
+                        <li>PackageFreeShop.com - Zero waste lifestyle products</li>
+                        <li>EarthHero.com - Eco-friendly product marketplace</li>
+                    </ul>
+                    <p><em>Research conducted in January 2026. All websites accessed and analyzed for component comparison and design insights.</em></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="home.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="blog.html">Blog</a>
+          <a href="research.html">Research</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9">
+          &copy; 2026 BloomEco. All rights reserved. Committed to a sustainable
+          future.
+        </p>
+        <p style="margin-top: 0.5rem; font-size: 0.85rem; color: #a8d08d">
+          Every purchase plants a tree 
+        </p>
+      </div>
+    </footer>
+</body>
+</html>
